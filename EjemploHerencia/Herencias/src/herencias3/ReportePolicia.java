@@ -49,10 +49,11 @@ public class ReportePolicia extends Reporte{
         
         for(int i=0;i<listaPolicia.size();i++){
             cadena = String.format("%sNombre: %s\nApelldio: %s\n"
-                    + "Edad: %d\n",cadena,
+                    + "Edad: %d\nRango: %s\n",cadena,
                     obtenerListaPolicia().get(i).getNombre(),
-                    obtenerListaPolicia().get(i).getApellido(),
-                    obtenerListaPolicia().get(i).getEdad());
+                    obtenerListaPolicia().get(i).getApellido(),                 
+                    obtenerListaPolicia().get(i).getEdad(),
+                    obtenerListaPolicia().get(i).obtenerRango());
         }
         cadena = String.format("%s\nPromedio de edades: %.2f\n",
                 cadena,obtenerPromedioEdades());

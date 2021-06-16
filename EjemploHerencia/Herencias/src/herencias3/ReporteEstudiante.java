@@ -49,9 +49,10 @@ public class ReporteEstudiante extends Reporte{
         
         for(int i=0;i<listaEstudinate.size();i++){
             cadena = String.format("%sNombre: %s\nApelldio: %s\n"
-                    + "Matricula: %.2f\n",cadena,
+                    + "Edad: %d\nMatricula: %.2f\n",cadena,
                     obtenerListaEstudiante().get(i).getNombre(),
                     obtenerListaEstudiante().get(i).getApellido(),
+                    obtenerListaEstudiante().get(i).getEdad(),
                     obtenerListaEstudiante().get(i).getMatricula());
         }
         cadena = String.format("%s\nPromedio de matriculas: %.2f\n",
